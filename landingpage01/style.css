@@ -15,12 +15,14 @@ body {
 }
 
 section {
-    background-image: url('./images/crystals-V9HYFXZ-min (1).jpg');
+    /* background-image: url('./images/crystals-V9HYFXZ-min (1).jpg'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/crystals-V9HYFXZ-min (1).jpg');
     padding: 14em;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+    background: linear-gradient()
 }
 
 li {
@@ -32,7 +34,7 @@ li {
 .title {
     font-style:var(--ff-primary);
     font-weight: 800;
-    color: var(--clr-neutral-900);
+    color: black;
 }
 
 .main {
