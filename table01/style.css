@@ -1,0 +1,54 @@
+:root {
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 5em;
+    padding: 2em;
+    width: 80%;
+}
+
+th {
+   text-align: left;
+}
+
+th, td {
+    padding: .2em;
+}
+
+tr {
+    /* width: 100%; */
+}
+
+
+
+
+.unpaid {
+    background-color: rgb(136, 84, 84);
+    color: rgb(233, 36, 36);
+}
+
+.paid {
+    background-color: rgb(100, 136, 84);
+    color: rgb(47, 247, 237);
+}
+
+.pending {
+    background-color: rgb(125, 136, 84);
+    color: rgb(247, 184, 47);
+}
+
+td a {
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(14, 38, 119);
+}
