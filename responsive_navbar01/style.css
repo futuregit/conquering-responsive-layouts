@@ -176,7 +176,7 @@ nav a:hover {
     nav a::before {
         content: '';
         display: block;
-        padding: .3125em;
+        padding: .115em;
         background: black;
         position: absolute;
         top: -.75em;
