@@ -1,0 +1,14 @@
+:root {
+    --border-red: red solid 4px;
+    --border-green: green solid 4px;
+    --border-yellow: yellow solid 4px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box; /*To keep padding and border size inside parent container */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
