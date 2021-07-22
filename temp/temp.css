@@ -1,14 +1,196 @@
 :root {
     --border-red: red solid 4px;
-    --border-green: green solid 4px;
-    --border-yellow: yellow solid 4px;
+    --border-green: rgb(4, 128, 0) solid 4px;
+    --border-yellow: rgb(153, 108, 25) solid 4px;
 }
 
 *, *::before, *::after {
     box-sizing: border-box; /*To keep padding and border size inside parent container */
 }
-
 body {
-    margin: 0;
-    padding: 0;
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+  font: .9em/1.2 Arial, Helvetica, sans-serif;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0,1fr));
+  grid-gap: 20px;
+}
+
+header,
+footer {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(207,232,220);
+  border: 2px solid rgb(79,185,227);
+}
+
+aside {
+  border-right: 1px solid #999;
+}
+
+header {
+  grid-column: 1 / 13;
+  grid-row: 1;
+}
+
+article {
+  grid-column: 4 / 13;
+  grid-row: 2;
+}
+
+aside {
+  grid-column: 1 / 4;
+  grid-row: 2;
+}
+
+footer {
+  grid-column: 1 / 13;
+  grid-row: 3;
+}
+
+/* body {
+    margin: 0;
+  }
+
+  header {
+    background: purple;
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+  }
+
+  /* Add your flexbox CSS below here */
+/* 
+  section {
+    display: flex;
+  }
+
+  article {
+    flex: 1 200px;
+  }
+
+  article:nth-of-type(3) {
+    flex: 3 200px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  article:nth-of-type(3) div:first-child {
+    flex: 1 100px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  button {
+    flex: 1 auto;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+  }  */
+
+/* ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr 1fr 1fr 1fr 1fr);
+    list-style: none;
+}
+
+li {
+    display: block;
+    width: 5em;
+    border: var(--border-green);
+}
+
+p {
+    border: var(--border-green);
+    margin: 0 auto;
+    text-align: end;
+    line-height: 1.6;
+     color: red; 
+   font-family: Helvetica, Arial, sans-serif;
+  text-shadow: 1px 1px 1px red,
+                2px 2px 1px red; 
+} */
+
+/* .wrapper {
+    display: flex;
+    border: var(--border-green);
+}
+
+.wrapper > div {
+    flex: 1;
+    background-color: lightblue;
+    padding: 2em;
+    border: var(--border-red);
+} */
+
+/* .wrapper {
+    display: grid;
+    border: var(--border-green);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 2em;
+    grid-row: span;
+}
+
+.wrapper > div {
+    background-color: lightblue;
+    padding: 2em;
+    border: var(--border-red);
+}  */
+
+/* p {
+    border: var(--border-yellow);
+    z-index: -999;
+    background-color: darkorchid;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0 30px;
+} */
+
+/* header {
+    background: purple;
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+    flex: 200px;
+    flex: 1 200px;    
+  }
+
+  article:nth-of-type(3) {
+    flex: 2 200px;
+  }
+
+  section {
+    display: flex;
+    flex-flow: wrap;
+    
+  } */
