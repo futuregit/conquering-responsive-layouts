@@ -7,7 +7,38 @@
 *, *::before, *::after {
     box-sizing: border-box; /*To keep padding and border size inside parent container */
 }
-body {
+
+
+.hero {
+  border: var(--border-green);
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+
+  border: var(--border-red);
+}
+
+.hero__text {
+  padding: 125px;
+  border: var(--border-yellow);
+  display: flex;
+  justify-content: flex-start;
+  align-items: ;
+}
+
+h1 {
+  border: 5px solid purple;
+}
+p {
+  border: 5px solid orangered;
+}
+
+a {
+  border: 5px solid olivedrab;
+}
+/* body {
   width: 90%;
   max-width: 900px;
   margin: 2em auto;
@@ -50,7 +81,7 @@ aside {
 footer {
   grid-column: 1 / 13;
   grid-row: 3;
-}
+} */
 
 /* body {
     margin: 0;

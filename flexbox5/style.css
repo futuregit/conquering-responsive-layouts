@@ -1,0 +1,70 @@
+:root {
+    --radius: .3125em;
+    --padding: .625em;
+    --teal: #00CAB5;
+    --off-white: #F3F3F3;
+    --yellow: #FFCE00;
+    --blue: #0085CA;
+    --black: #171717;
+    --alt-black: #313131;
+    --font-1: 'Roboto', san-serif;
+    --font-weight-heavy: 900;
+    --font-weight-light: 300;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+header {
+  background: purple;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+}
+
+/* Add your flexbox CSS below here */
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1 200px;
+}
+
+article:nth-of-type(3) {
+  flex: 3 200px;
+  display: flex;
+  flex-flow: column;
+}
+
+article:nth-of-type(3) div:first-child {
+  flex: 1 100px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  flex: 1 auto;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
