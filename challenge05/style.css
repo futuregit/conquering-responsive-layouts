@@ -131,3 +131,36 @@ h1 {
 .btn:focus {
     opacity: .75; 
 }
+
+@media (max-width: 600px) {
+    .row {
+        display: block;
+    }
+
+    .hero__text,
+    .hero__img,
+    .text__left,
+    .sidebar {
+        width: 100%;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .hero__img {
+        margin-top: 2em;
+    }
+
+    a {
+        margin: 0 auto;
+    }
+
+    .hero {
+        background: var(--clr-black);
+    }
+
+    body {
+        background: var(--clr-aqua);
+    }
+}
