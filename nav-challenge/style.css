@@ -55,7 +55,8 @@ h1 {
 
 .row {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .col {
@@ -73,12 +74,29 @@ header {
     padding: .5em 0;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.logo {
+    margin-right: 1em;
+}
+
 .nav__list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+    align-items: center;
+    font-size: .9rem;
+    /* border: 2px solid red; */
     /* justify-content: space-between; */
+}
+
+.nav__list--primary {
+    margin: 0 auto;
 }
 
 .nav__link {
@@ -98,9 +116,19 @@ header {
     opacity: .75;
 }
 
-.nav__item {
+/* .nav:nth-child(1) .nav__list .nav__item {
     margin-right: 2em;
+} */
+/* 
+
+/* The plus select elements that has one before it */
+.nav__item + .nav__item {
+    margin-left: 1em;
 }
+
+/* .nav__item--push_right {
+    margin-left: auto;
+} */
 
 
 .hero {
