@@ -55,7 +55,7 @@ h1 {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .col {
@@ -78,7 +78,7 @@ header {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .nav__link {
@@ -96,6 +96,10 @@ header {
 
 .nav__link:hover {
     opacity: .75;
+}
+
+.nav__item {
+    margin-right: 2em;
 }
 
 
