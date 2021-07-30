@@ -43,16 +43,19 @@ h1 {
 .text__left {
     color: var(--clr-teal);
     margin-top: 2em;
+    width: 62%;
 }
 
 .sidebar {
     color: white;
     text-align: center;
     background: var(--clr-teal);
+    width: 32%;
     padding: 3rem;
+    /* padding: 3rem;
     margin-left: 1.4em;
-    align-self: flex-start;
-    border: 4px solid yellow;
+    align-self: flex-start; */
+    /* border: 4px solid yellow; */
 }
 
 .text__left h1, .sidebar h1{
@@ -78,7 +81,7 @@ h1 {
 .row {
     /* display: flex => flex container */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     
     /* can't use yet */
     /* gap: 100px; */
@@ -106,7 +109,7 @@ h1 {
 .hero__img {
     width: 32%;
     align-self: flex-start;
-    border: 4px solid yellow;
+    /* border: 4px solid yellow; */
 }
 
 .hero p {

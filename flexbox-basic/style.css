@@ -1,0 +1,31 @@
+:root {
+    --clr-orange: orange;
+    --clr-blue: rgb(127, 158, 192);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: var(--clr-orange);
+    height: 50vh;
+    width: 50vw;
+    padding: .5em;
+    margin: 25vh auto 0;
+    
+    display: flex;
+    flex-flow: nowrap;
+    /* justify-content: flex-end; */
+}
+
+.item {
+    background: transparent;
+    margin: 0.5em;
+    border: 2px solid black;
+}
