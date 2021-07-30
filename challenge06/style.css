@@ -1,5 +1,20 @@
 :root {
+    --clr-tan: #F3EED9;
+    --clr-brown: #824936;
+    --clr-gray: #222C2A;
+    --clr-dark-green: #23424A;
+    --clr-purple: #87629A;
+    --clr-teal: #136C72;
+    --clr-black: #3A3A3A;
+    --clr-aqua: #38CFD9;
 
+    --section1-min-height: 660px;
+    --container-max-width: 1128px;
+
+    --border-red: red solid 4px;
+    --border-green: rgb(4, 128, 0) solid 4px;
+    --border-yellow: rgb(153, 108, 25) solid 4px;
+    --border-black: black solid 2px;
 }
 
 *, *::before, *::after {
@@ -9,4 +24,118 @@
 body {
     margin: 0;
     padding: 0;
+}
+
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400&display=swap');
+
+.font--robo-light {
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 18px;
+}
+
+.font--robo-reg {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 21px;
+}
+
+.font--play-disp-large {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+}
+
+.font--play-disp-reg {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+
+/* Structure */
+
+.container {
+    max-width: var(--container-max-width);
+    border: var(--border-black);
+    margin: 0 auto;
+    width: 80%;
+}
+
+.row {
+    /* margin: 0 auto; */
+    /* width: 80%; */
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    flex-flow: column;
+}
+
+.hero {
+    min-height: var(--section1-min-height);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.center-title {
+    text-align: center
+}
+
+.flex--2-columns {
+    display: flex;
+    justify-content: space-between
+}
+
+.image_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image--width {
+    max-width: 350px;
+    width: 40%;
+    border: none;
+}
+
+.group {
+    width: 52%;
+}
+
+.col-right, .col-left {
+    width: 47%;
+}
+
+/* Coloring */
+
+.subtitle, .main .title {
+    color: var(--clr-brown);
+}
+
+.flex--2-columns {
+    color: rgb(44, 44, 192);
+}
+
+.group {
+    color: white;
+}
+
+.hero {
+    background: var(--clr-tan);
+}
+
+.image_1 {
+    background: var(--clr-gray);
+}
+
+
+.image_2 {
+    background: var(--clr-brown);
 }
