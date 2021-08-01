@@ -9,6 +9,10 @@
 
 */
 
+:root {
+    
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -124,6 +128,7 @@ header {
     visibility: hidden;
     height: 0;
     position: absolute;
+    font-size: 1rem;
 }
 
 .nav--visible {
@@ -131,6 +136,40 @@ header {
     height: auto;
     position: relative;
 } 
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__list--primary {
+    margin-bottom: 2em;
+}
+
+.nav__item {
+    margin-top: .75em;
+}
+
+.nav__link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav__link--button {
+    padding: .25em .75em;
+    background: #fff;
+    color: #23424A;
+    border-radius: 100px;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    opacity: .65;
+}
+
+
 
 
 .logo {
@@ -178,7 +217,19 @@ header {
     .nav {
         visibility: visible;
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
         height: auto;
+        position: relative;
+    }
+
+    .nav__list {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav__item {
+        margin: 0 0 0 1.5em;
     }
 
     .row {
