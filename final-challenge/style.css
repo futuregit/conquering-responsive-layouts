@@ -348,12 +348,38 @@ footer h3 {
     opacity: .75;
 }
 
+@media (min-width: 700px) {
+    .feature {
+        flex-flow: row;
+    }
+
+    .main {
+        margin-bottom: 4em;
+    }
+
+    .main__sidebar{
+        display: flex;
+    }
+
+    .main__sidebar__col p{
+        padding-top: .3em;
+        padding-bottom: 0.6em;
+    }
+
+    .main__sidebar__col + .main__sidebar__col {
+        margin-left: 1em;
+    }
+    
+    .main__sidebar__col h2 {
+        font-size: 1.45rem;
+        font-weight: bold;
+    }
+
+    
+}
+
 @media (min-width: 1000px) {
 
 }
 
 /* End media min-width: 1000px */
-
-@media (min-width: 700px) {
-
-}
