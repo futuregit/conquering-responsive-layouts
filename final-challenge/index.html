@@ -11,18 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    
         <header>
-            <div class="logo">LOGO</div>
-            <nav class="navbar">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Sign In</li>
-                    <li class="navbar__special-link">Sign Up</li>
-                </ul>
-            </nav>
+            <div class="hamburgerToggle">
+                <div class="hamburger-icon icon1"></div>
+                <div class="hamburger-icon icon2"></div>
+                <div class="hamburger-icon icon3"></div>
+            </div>
+            <div class="container">
+
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="Conquering Responsive Layouts" srcset="">
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar__primary-links">
+                        <li><a href="#" class="navbar__primary-links-a">Home</a></li>
+                        <li><a href="#" class="navbar__primary-links-a">About</a></li>
+                        <li><a href="#" class="navbar__primary-links-a">Contact</a></li>
+                    </ul>
+                    <ul class="navbar__secondary-links">
+                        <li><a href="#" class="navbar__secondary-links-a">Sign In</a></li>
+                        <li class="navbar__special-link"><a href="#" class="navbar__secondary-links-a">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <section class="hero">
             <div class="hero__left">
@@ -36,10 +48,10 @@
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.
                 </div>
-                <div class="hero__call-to-action">I want to learn</div>
+                <a href="#" class="btn">I want to learn</a>
             </div>
         </section>
-        <section class="feature">
+        <section class="feature container">
             <div class="feature__col1">
                 <h2 class="feature__title">Mobile-first</h2>
                 <p class="feature__text">
@@ -71,7 +83,7 @@
                 </p>
             </div>
         </section>
-        <section class="main">
+        <section class="main container">
             <div class="main__left">
                 <h1>It doesn’t have to be so hard</h1>
                 <p>
@@ -121,8 +133,8 @@
             </div>
         </section>
         <footer>
-            <div class="footer__title">
-                <h1>just scratching the surface</h1>
+            <div class="footer__title container">
+                <h1>Just scratching the surface</h1>
                 <div class="footer__about">
                     <h3>About our company</h3>
                     <p>
@@ -136,31 +148,31 @@
             <div class="footer__link__col">
                 <h3>Getting around</h3>
                 <ul class="footer__link_col__links">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Service</li>
+                    <li><a class="footer__link_col__links__a" href="#">Home</a></li>
+                    <li><a class="footer__link_col__links__a" href="#">About</a></li>
+                    <li><a class="footer__link_col__links__a" href="#">Contact</a></li>
+                    <!-- <li><a href="#">Service</a></li> -->
                 </ul>
             </div>
             <div class="footer__link__col">
                 <h3>Other things</h3>
                 <ul class="footer__link_col__links">
-                    <li>Lorem ipsum</li>
-                    <li>dolor </li>
-                    <li>sit amet</li>
-                    <li>consectetur</li>
+                    <li><a class="footer__link_col__links__a" href="#">Lorem ipsum</a></li>
+                    <li><a class="footer__link_col__links__a" href="#">dolor</a> </li>
+                    <li><a class="footer__link_col__links__a" href="#">sit amet</a></li>
+                    <li><a class="footer__link_col__links__a" href="#">consectetur</a></li>
                 </ul>
             </div>
             <div class="footer__link__col">
                 <h3>And more</h3>
                 <ul class="footer__link_col__links">
-                    <li>Lorem ipsum</li>
-                    <li>dolor </li>
-                    <li>sit amet</li>
-                    <li>consectetur</li>
+                    <li><a class="footer__link_col__links__a" href="#">Lorem ipsum</a></li>
+                    <li><a class="footer__link_col__links__a" href="#">dolor</a> </li>
+                    <li><a class="footer__link_col__links__a" href="#">sit amet</a></li>
+                    <li><a class="footer__link_col__links__a" href="#">consectetur</a></li>
                 </ul>
             </div>
         </footer>
-    </div>
 </body>
+<script src="main.js"></script>
 </html>

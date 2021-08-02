@@ -51,7 +51,6 @@ h1 {
 .btn:focus {
     opacity: .75; 
 }
-
 .container {
     width: 80%;
     max-width: 1100px;
