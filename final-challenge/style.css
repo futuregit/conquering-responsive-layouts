@@ -1,0 +1,160 @@
+:root {
+    --clr-black: #2E323F;
+    --clr-plum: #3B4050;
+    --clr-gray: #6F737F;
+    --clr-white: #FFFFFF;
+    --clr-tan: #A59678;
+
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        margin:0;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1rem;
+    }
+    
+    /* Typography */
+    
+    header {
+        font-size: 1.125rem;
+        font-weight: bold;
+    }
+    
+    .hero__title {
+        font-size: 5.625rem;
+        font-weight: bold;
+    }
+    
+    .hero__text {
+        font-family: var(--secondary-font);
+        font-size: 1.5rem;
+    }
+    
+    .hero__call-to-action {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .feature__title {
+        font-size: 1.875rem;
+        font-weight: bold;
+    }
+    
+    .feature__text {
+        font-family: var(--secondary-font);
+    }
+    
+    .main__left {
+        font-size: 2.25rem;
+        font-weight: bold;
+    }
+    
+    .main__left p {
+        font-size: 1.3125rem;
+    }
+    
+    .main__sidebar__col h2 {
+        font-size: 1.875rem;
+        font-weight: bold;
+    }
+    
+    .main__sidebar__col p {
+        font-family: var(--secondary-font);
+        font-size: 1.125rem;
+    }
+    
+    .footer__title h1 {
+        font-size: 1.875rem;
+        font-weight: bold;
+    }
+    
+    .footer__about h3,
+    .footer__link__col h3 {
+        font-size: 1.3125rem;
+        font-weight: bold;
+    }
+    
+    .footer__about p,
+    .footer__link__col p {
+        font-family: var(--secondary-font);
+        font-size: 1rem;
+    }
+    
+    
+    /* Structure */
+    
+    /* Color */
+    
+    header {
+        background: var(--clr-black);
+        color: var(--clr-white);
+    }
+
+    .navbar__special-link {
+        background: var(--clr-tan);
+    }
+    
+    .hero {
+        background: var(--clr-plum);
+    }
+
+    .hero__title {
+        color: var(--clr-tan);
+    }
+
+    
+    .hero__title__beginning-text {
+        color: var(--clr-white);
+    }
+
+    .hero__text {
+        color: var(--clr-white)
+    }
+
+    .hero__call-to-action {
+        background: var(--clr-tan);
+        color: var(--clr-white)
+    }
+
+    .feature__title {
+        color:var(--clr-tan);
+    }
+
+    .main__left h1 {
+        color:var(--clr-tan);
+    }
+       
+    .main__sidebar__col {
+        color: var(--clr-white);
+        background: var(--clr-plum);
+    }
+    
+    footer {
+        color: var(--clr-white);
+        background: var(--clr-plum);
+    }
+
+    footer h3 {
+        color:var(--clr-tan);
+    }
+
+    .footer__about p,
+    .footer__link_col__links li {
+        color: rgb(187, 186, 186);
+    }
+
+}
+
+/* End media min-width: 1000px */
+
+@media (min-width: 700px) {
+
+}
